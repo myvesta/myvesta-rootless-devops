@@ -1,0 +1,22 @@
+allowed_commands_for_privilege_escalation=(
+    "/usr/local/vesta/bin/v-list-sys-services"
+    "/usr/local/vesta/bin/v-commander"
+    "/usr/local/vesta/bin/v-clean-garbage"
+    "/usr/local/vesta/bin/v-clear-fail2ban"
+    "/usr/local/vesta/bin/v-update-myvesta"
+    "/usr/local/vesta/bin/v-update-firewall"
+)
+allowed_paths_for_read+=(
+    "/usr/local/vesta/data/firewall/rules.conf"
+    "/usr/local/vesta/log/"
+    "/root/vesta"
+    "/root/myvesta"
+    "/root/check"
+)
+allowed_paths_for_write+=(
+    "/usr/local/vesta/data/firewall/rules.conf"
+    "/usr/local/vesta/log/"
+    "/root/vesta"
+    "/root/myvesta"
+    "/root/check"
+)
